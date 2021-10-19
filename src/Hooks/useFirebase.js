@@ -11,7 +11,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
     const [isLoading, setIsLoading] = useState(true)
-    console.log(user, error)
+
 
     const gooleSignIn = () => {
         setIsLoading(true)
@@ -28,11 +28,8 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
     
-    const signUp = (email, password, name) => {
+    const signUp = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
-            updateProfile(auth.currentUser, {
-                displayName: {name}
-                })
             .then(result => {
                 const user = result.user;
                 setUser(user)
@@ -85,7 +82,8 @@ const useFirebase = () => {
         signUp,
         signIn,
         logOut,
-        isLoading
+        isLoading,
+        setUserName,setProName
     }
 
 }

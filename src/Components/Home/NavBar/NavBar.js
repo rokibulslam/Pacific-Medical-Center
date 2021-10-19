@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar} from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../Hooks/useAuth';
 import imgicon from "../../../Images/micon2-removebg-preview.png"
