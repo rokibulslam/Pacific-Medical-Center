@@ -14,7 +14,6 @@ function App() {
       <AuthProvider>
         <Router>
         <NavBar></NavBar>
-        
         <Switch>
           <Route exact path="/">
             <Home></Home>

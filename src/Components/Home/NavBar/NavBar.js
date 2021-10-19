@@ -21,9 +21,9 @@ const NavBar = () => {
                 </Nav>
                 <Nav className="justify-content-center align-items-center">
                 {user.email ? <Button className="mx-3 mb-0 btn-light"  onClick={logOut}>Sign Out</Button> :
-                <Nav.Link className="text-decoration-none px-3" to="/signIn">Sign to</Nav.Link>}
+                <Nav.Link as={HashLink} className="text-decoration-none px-3" to="/signIn">Sign in</Nav.Link>}
                 {user?.email ? <p className="mb-0">{user.displayName}</p> 
-                                : <NavLink className="text-decoration-none px-3" to="/signUp">Sign Up</NavLink>}
+                                : <Nav.Link as={HashLink} className="text-decoration-none px-3" to="/signUp">Sign Up</Nav.Link>}
                 </Nav>
             </Navbar.Collapse>
             </Container>
