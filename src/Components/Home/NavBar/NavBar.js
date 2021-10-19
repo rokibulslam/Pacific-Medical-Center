@@ -15,7 +15,7 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                <Nav.Link as={HashLink} className="text-decoration-none"  to="/home#home">Home</Nav.Link>
+                <Nav.Link as={HashLink} className="text-decoration-none fw-bold "  to="/home#home">Home</Nav.Link>
                 <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold"  to="/home#services">Services</Nav.Link>
                 <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold" to="/appoint">Appoinment</Nav.Link>
                 <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold" to="/experience">Patient Experience</Nav.Link>
