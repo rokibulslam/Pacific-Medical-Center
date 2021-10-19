@@ -20,13 +20,13 @@ const Services = () => {
                 services?.map(service=>
                     <div
                         key={service._id}
-                        className="col-md-3">
-                    <Card style={{ width: '18rem' }}>
+                        className="col-md-3 g-4">
+                    <Card className="h-100 w-100">
                     <Card.Img className="img-fluid" variant="top" src={service.imageURL} />
-                    <Card.Body>
+                    <Card.Body className="d-flex flex-column justify-content-end rounded">
                         <Card.Title>{service.name}</Card.Title>
                         <Card.Text>
-                        {service.description.slice(0,200)}
+                        {service.description.slice(0,100)}
                         </Card.Text>
                         <Link to={`/service/${service._id}`}>
                             <Button variant="primary">Details</Button>

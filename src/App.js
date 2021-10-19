@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Footer from './Components/Home/Footer/Footer';
 import Home from './Components/Home/Home/Home';
 import NavBar from './Components/Home/NavBar/NavBar';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
@@ -31,7 +32,7 @@ function App() {
               <SignUp></SignUp>
             </Route>
         </Switch>
-      
+      <Footer></Footer>
       </Router>
       </AuthProvider>
     </div>
