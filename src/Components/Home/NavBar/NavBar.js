@@ -9,7 +9,7 @@ const NavBar = () => {
     const {user,  logOut} = useAuth()
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar className="navbar fixed-top" collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
             <Navbar.Brand href="#home">Pacific Medical Center</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

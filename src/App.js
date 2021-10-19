@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './Components/Home/Footer/Footer';
 import Home from './Components/Home/Home/Home';
 import NavBar from './Components/Home/NavBar/NavBar';
+import NotFound from './Components/NotFound/NotFound';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 import SignIn from './Components/User/SignIn/SignIn';
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/signUp">
               <SignUp></SignUp>
+            </Route>
+            <Route path="*">
+                <NotFound></NotFound>
             </Route>
         </Switch>
       <Footer></Footer>

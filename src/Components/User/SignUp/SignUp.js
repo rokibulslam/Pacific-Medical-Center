@@ -43,7 +43,7 @@ const SignUp = () => {
                     <Form.Label>Address</Form.Label>
                     <Form.Control placeholder="1234 Main St" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button className="mb-5" variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>

@@ -25,7 +25,8 @@ const SignIn = () => {
 
 
     return (
-        <div className="container">
+        <div className="my-5">
+            <div className="container">
             <Form onClick={handleSignIn}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -46,8 +47,10 @@ const SignIn = () => {
             <p>Or</p>
             <h6 className="text-danger">{error}</h6>
             <Button onClick={gooleSignIn}>Sign in with google</Button>
-            <p>Create a new account here</p>
+            <br/>
+            <p className="d-inline me-3">Create a new account here</p>
             <Link to="/signUp">Sign Up</Link> 
+        </div>
         </div>
     );
 };
