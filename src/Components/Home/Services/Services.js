@@ -14,7 +14,7 @@ const Services = () => {
 
 
     return (
-        <div className="container my-5">
+        <div id="services" className="container my-5">
             <div className="row">
             {
                 services?.map(service=>
