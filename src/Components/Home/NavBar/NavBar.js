@@ -10,7 +10,7 @@ const NavBar = () => {
     
     return (
         <div>
-            <Navbar className=" fixed-top overflow-hidden navbar" collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar className=" sticky-top overflow-hidden navbar" collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
                     <Navbar.Brand href="#home"><img className="rounded-3" src={imgicon} alt="" /> Pacific Medical Center</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

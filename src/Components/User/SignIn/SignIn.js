@@ -7,7 +7,7 @@ import useAuth from '../../../Hooks/useAuth';
 
 
 const SignIn = () => {
-    const {signIn, error, signOut, gooleSignIn, user}=useAuth()
+    const {signIn, error, gooleSignIn, user}=useAuth()
     const [email, setEmail] = useState('')
     const [password, setPassword]= useState('')
     
@@ -26,6 +26,7 @@ const SignIn = () => {
 
     return (
         <div className="my-5 overflow-hidden py-5">
+            <h1 className="text-center">Sign In Here</h1>
             <div className="container">
             <Form className="pt-5 pb-2" onClick={handleSignIn}>
             <Form.Group className="mb-3 " controlId="formBasicEmail">

@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import useAuth from '../../../Hooks/useAuth';
 
 const SignUp = () => {
-    const { signUp } = useAuth();
+    const { signUp, error } = useAuth();
     const [email, setEmail] = useState('')
     const [password, setPassword]= useState('')
     const [name, setName] = useState('')
@@ -23,10 +23,11 @@ const SignUp = () => {
     }
     return (
         <div className="container">
+            <h1 className="text-center">Registration Here</h1>
             <Form onClick={handleSignUp}>
-                <Form.Group className="mb-3 text-start" controlId="formGridAddress2">
+                <Form.Group className="mb-3 mt-5 pt-5 text-start" controlId="formGridAddress2">
                     <Form.Label>Full Name</Form.Label>
-                    <Form.Control onBlur={getName} placeholder="Your Name" />
+                    <Form.Control onBlur={getName} placeholder="Your Name" required/>
                 </Form.Group>
                 <Form.Group className="mb-3 text-start" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -43,6 +44,7 @@ const SignUp = () => {
                     <Form.Label>Address</Form.Label>
                     <Form.Control placeholder="1234 Main St" />
                 </Form.Group>
+                <h6>{error}</h6>
                 <Button className="mb-5" variant="primary" type="submit">
                     Submit
                 </Button>
