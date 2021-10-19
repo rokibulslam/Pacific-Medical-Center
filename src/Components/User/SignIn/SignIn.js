@@ -25,10 +25,10 @@ const SignIn = () => {
 
 
     return (
-        <div className="my-5">
+        <div className="my-5 overflow-hidden py-5">
             <div className="container">
-            <Form onClick={handleSignIn}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form className="pt-5 pb-2" onClick={handleSignIn}>
+            <Form.Group className="mb-3 " controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control onBlur={getEmail} type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
@@ -39,13 +39,13 @@ const SignIn = () => {
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control onBlur={getPassword} type="password" placeholder="Password" />
-            </Form.Group>
+                </Form.Group>
+                <h6 className="text-danger">{error}</h6>
             <Button variant="primary" type="submit">
                 Sign In
             </Button>   
             </Form>
-            <p>Or</p>
-            <h6 className="text-danger">{error}</h6>
+            
             <Button onClick={gooleSignIn}>Sign in with google</Button>
             <br/>
             <p className="d-inline me-3">Create a new account here</p>

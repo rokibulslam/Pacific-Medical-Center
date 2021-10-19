@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Service.css'
 
 const Services = () => {
     const [services, setServices] = useState([])
@@ -14,7 +15,9 @@ const Services = () => {
 
 
     return (
-        <div id="services" className="container my-5">
+        <div className="bg-color">
+            <div id="services" className="container py-5 ">
+                <h1 className="text-center p-5">Our Promise For A New Kind Of Caring</h1>
             <div className="row">
             {
                 services?.map(service=>
@@ -24,18 +27,19 @@ const Services = () => {
                     <Card className="h-100 w-100">
                     <Card.Img className="img-fluid" variant="top" src={service.imageURL} />
                     <Card.Body className="d-flex flex-column justify-content-end rounded">
-                        <Card.Title>{service.name}</Card.Title>
+                        <Card.Title className="fw-bold">{service.name}</Card.Title>
                         <Card.Text>
                         {service.description.slice(0,100)}
                         </Card.Text>
                         <Link to={`/service/${service._id}`}>
-                            <Button variant="primary">Details</Button>
+                            <Button variant="success">Details</Button>
                         </Link>
                     </Card.Body>
                     </Card>
                 </div>)
             }
             </div>
+        </div>
         </div>
     );
 };

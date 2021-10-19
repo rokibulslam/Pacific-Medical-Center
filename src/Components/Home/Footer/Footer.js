@@ -11,7 +11,8 @@ const Footer = () => {
     const twitter = <FontAwesomeIcon icon={faTwitter}size="3x" />
     const instgaram = <FontAwesomeIcon icon={faInstagram}size="3x" />
     return (
-        <div className="footer-bg text-white fw-light p-5">
+        <div className="footer-bg overflow-hidden text-white fw-light p-5">
+            <h1 className="fs-1 text-center pb-3">Pacific Medical Center</h1>
             <div className="container">
             <div className="row">
             <div className="col-md-3 col-sm-12">
