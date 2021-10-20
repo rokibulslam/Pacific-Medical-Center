@@ -23,8 +23,8 @@ const Services = () => {
                 services?.map(service=>
                     <div
                         key={service._id}
-                        className="col-md-3 g-4 card px-0 mx-3">
-                    <Card className="h-100 w-100">
+                        className="col-md-3 g-4">
+                    <Card className="h-100 w-100 card-style">
                     <Card.Img className="img-fluid" variant="top" src={service.imageURL} />
                     <Card.Body className="d-flex flex-column justify-content-end rounded card-text">
                         <Card.Title className="fw-bold">{service.name}</Card.Title>
