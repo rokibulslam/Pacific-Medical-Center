@@ -17,10 +17,16 @@ const ServiceDetails = (props) => {
     const details = service?.filter(td => td._id === id)
        console.log(details)
     return (
-        <div className="container">
-            <img className="img-fluid" src={details[0]?.imageURL} alt="" />
-            <h3>Name: {details[0]?.name}</h3>
-            <p>Description: {details[0]?.description}</p>
+        <div className="container py-5">
+            <div className="row">
+            <div className="col-md-6 col-sm-12">
+                <img className="img-fluid rounded rounded-3" src={details[0]?.imageURL} alt="" />
+            </div>
+            <div className="col-md-6 col-sm-12">
+                <h3 className="fw-bolder text-decoration-underline text-info">Name: {details[0]?.name}</h3>
+                <p><b>Description:</b> {details[0]?.description}</p>
+            </div>
+            </div>
         </div>
     );
 };
