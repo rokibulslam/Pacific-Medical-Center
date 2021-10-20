@@ -23,7 +23,7 @@ const NavBar = () => {
                 <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold text-white" to="/experience">Patient Experience</Nav.Link>
                 </Nav>
                 <Nav className="justify-content-center align-items-center">
-                {user.email ? <button className="button text-white"  onClick={logOut}>Sign Out</button> :
+                {user.email ? <button className="button text-white p-2"  onClick={logOut}>Sign Out</button> :
                 <Nav.Link as={HashLink} className="button text-white m-2" to="/signIn">Sign in</Nav.Link>}
                 {user?.email ? <p className="mb-0 ps-3 text-white"> {user.displayName}</p> 
                                 : <Nav.Link as={HashLink} className="button text-white" to="/signUp">Sign Up</Nav.Link>}
