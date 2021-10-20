@@ -13,7 +13,7 @@ const PatientsReview = () => {
             </div>
                 </div>
                 <div className="col-md-6 col-sm-12">
-                    <img className="rounded-circle" src={patientimg} alt="" />
+                    <img className="rounded-circle img-fluid" src={patientimg} alt="" />
                 </div>
             </div>
         </div>
