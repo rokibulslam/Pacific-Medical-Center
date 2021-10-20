@@ -39,9 +39,10 @@ const SignUp = () => {
     }
      
     return (
-        <div className="container">
+        <div className="my-5 overflow-hidden pb-5">
             <h1 className="text-center">Registration Here</h1>
-            <Form >
+            <div className="container d-flex flex-column align-items-center">
+                <Form>
                 <Form.Group className="mb-3 text-start" controlId="formGridAddress1">
                     <Form.Label>Name</Form.Label>
                     <Form.Control required onBlur={getName} placeholder="Name" />
@@ -58,11 +59,12 @@ const SignUp = () => {
                     <Form.Control required onBlur={getPassword} type="password" placeholder="Password" />
                 </Form.Group>
                 
-                <h6>{error}</h6>
-                <Button onClick={handleSignUp} className="mb-5" variant="primary" type="submit">
+                <h6 className="text-danger">{error}</h6>
+                <Button onClick={handleSignUp} className="mb-5 sign-in" type="submit">
                     Submit
                 </Button>
             </Form>
+            </div>
         </div>
     );
 };
