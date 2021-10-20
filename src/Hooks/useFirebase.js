@@ -27,7 +27,9 @@ const useFirebase = () => {
             })
             .finally(() => setIsLoading(false));
     }
-    
+    const reload = () => {
+        window.location.reload()
+    }
     const signUp = (email, password) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
@@ -35,6 +37,7 @@ const useFirebase = () => {
                 const user = result.user;
                 setUser(user)
                 setUserName()
+                reload()
                 setError('')
         })
             .catch(error => {
