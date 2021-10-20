@@ -7,7 +7,7 @@ const Appoinment = () => {
         <div className="overflow-hidden">
             <Header></Header>
             <div className="container py-5">
-                <h1 className="fs-1 text-center pt-5 text-warning">Connecting Dubai’s Leading Healthcare With The World</h1>
+                <h1 className="fs-1 text-center pt-5  textColor">Connecting Bangladesh's Leading Healthcare With The World</h1>
                 <p>American Hospital Dubai is a premier, multi-specialty healthcare institution, offering world-class primary, secondary, and tertiary medical services. We are a multi-Specialist leader offering cutting-edge, evidence-based medical care. We have set the standards in the region with our centers of excellence in Cancer, Heart, and Orthopedics.</p>
                 <p>Our Total Joint Replacement Center of Excellence is the first of its kind in the Middle East and one of only four worldwide, with the most extensive patient base of any private hospital in the region. The center receives international patients from the region and beyond.</p>
                 <p>All our physicians are American Board-certified (or equivalent), supported by western-trained nurses, allied health professionals and paramedics. We are a Mayo Clinic Care Network (MCCN) Member. We invest in state-of-the-art facilities and equipment such as Surgical Robotics Systems to provide you with the highest quality care. We believe that the best human expertise, along with the most advanced technology, can achieve breakthroughs in your treatment.</p>

@@ -11,7 +11,8 @@ const Footer = () => {
     const twitter = <FontAwesomeIcon icon={faTwitter}size="3x" />
     const instgaram = <FontAwesomeIcon icon={faInstagram}size="3x" />
     return (
-        <div className="footer-bg overflow-hidden text-white fw-light p-5">
+        <div>
+            <div className="footer-bg overflow-hidden text-white fw-light p-5">
             <h1 className="fs-1 text-center pb-3">Pacific Medical Center</h1>
             <div className="container">
             <div className="row">
@@ -72,7 +73,12 @@ const Footer = () => {
                         </div>
             </div>
         </div>
+        </div>    
         </div>
+            <div>
+                <p className="text-white bg-dark p-5 mb-0
+                text-center">Copyright © 2020. All Rights Reserved. Pacific Medical Center and Specialized Hospital Ltd.</p>
+            </div>
         </div>
     );
 };

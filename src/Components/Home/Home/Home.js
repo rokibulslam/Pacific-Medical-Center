@@ -4,6 +4,7 @@ import Headings from '../Headings/Headings';
 import PatientsReview from '../PatientsReview/PatientsReview';
 import ServiceBar from '../ServiceBar/ServiceBar';
 import Services from '../Services/Services';
+import Welcome from '../Welcome/Welcome';
 
 const Home = () => {
    
@@ -14,6 +15,7 @@ const Home = () => {
             <Headings></Headings>
             <ServiceBar></ServiceBar>
             <Services></Services>
+            <Welcome></Welcome>
             <PatientsReview></PatientsReview>
         </div>
     );

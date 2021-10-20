@@ -8,7 +8,7 @@ const Experience = () => {
             <Header></Header>
             <div className="p-5 text-center text-white bg-success">
                 <div className="container">
-                <h1>American Hospital Shares The</h1>
+                <h1>Pacific Medical Center Shares The</h1>
                 <h1>Emotions</h1>
             </div>
             </div>
