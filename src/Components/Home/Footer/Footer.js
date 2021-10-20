@@ -7,9 +7,9 @@ import './Footer.css'
 
 
 const Footer = () => {
-    const facebook = <FontAwesomeIcon icon={faFacebook}size="3x" />
-    const twitter = <FontAwesomeIcon icon={faTwitter}size="3x" />
-    const instgaram = <FontAwesomeIcon icon={faInstagram}size="3x" />
+    const facebook = <FontAwesomeIcon icon={faFacebook}size="2x" />
+    const twitter = <FontAwesomeIcon icon={faTwitter}size="2x" />
+    const instgaram = <FontAwesomeIcon icon={faInstagram}size="2x" />
     return (
         <div>
             <div className="footer-bg overflow-hidden text-white fw-light p-5">
@@ -67,9 +67,9 @@ const Footer = () => {
                 <Form.Control type="email" placeholder="Enter Your Email" />
                         <Button>Subscribe</Button>
                         <div className="pt-3">
-                            <a className="px-2" href="https://www.facebook.com/" >{facebook}</a>
-                    <a className="px-2" href="https://www.facebook.com/" >{instgaram}</a>
-                    <a className="px-2"  href="https://www.facebook.com/">{twitter}</a>
+                            <a className="px-2 text-white" href="https://www.facebook.com/" >{facebook}</a>
+                    <a className="px-2 text-white" href="https://www.facebook.com/" >{instgaram}</a>
+                    <a className="px-2 text-white"  href="https://www.facebook.com/">{twitter}</a>
                         </div>
             </div>
         </div>
