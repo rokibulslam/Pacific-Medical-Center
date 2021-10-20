@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Button,  Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
-
-
+import './SignIn.css'
+import icon from '../../../Images/google-removebg-preview.png'
 
 
 const SignIn = () => {
@@ -25,10 +25,10 @@ const SignIn = () => {
 
 
     return (
-        <div className="my-5 overflow-hidden py-5">
-            <h1 className="text-center">Sign In Here</h1>
+        <div className="my-5 overflow-hidden pb-5">
+            <h1 className="text-center text-color">Welcome To Pacific Medical Center</h1>
             <div className="container">
-            <Form className="pt-5 pb-2" >
+            <Form className="pt-5 pb-2 form" >
             <Form.Group className="mb-3 " controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control onBlur={getEmail} type="email" placeholder="Enter email" />
@@ -42,13 +42,14 @@ const SignIn = () => {
                 <Form.Control onBlur={getPassword} type="password" placeholder="Password" />
                 </Form.Group>
                 <h6 className="text-danger">{error}</h6>
-            <Button onClick={handleSignIn} variant="primary" type="submit">
+            <button onClick={handleSignIn} className="sign-in text-white" type="submit">
                 Sign In
-            </Button>   
+            </button>   
             </Form>
-            
-            <Button onClick={gooleSignIn}>Sign in with google</Button>
-            <br/>
+            <h4 className="text-center">Or</h4>
+            <button className="googlesign-in text-white d-flex" onClick={gooleSignIn}><img className="mx-3" height="30px" src={icon} alt="" /> Sign in with google</button>
+                <br />
+                
             <p className="d-inline me-3">Create a new account here</p>
             <Link to="/signUp">Sign Up</Link> 
         </div>

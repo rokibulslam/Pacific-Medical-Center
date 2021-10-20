@@ -11,8 +11,8 @@ const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
     const [isLoading, setIsLoading] = useState(true)
-
-
+    const [name, setName] = useState('')
+    console.log(user)
     const gooleSignIn = () => {
         setIsLoading(true)
         const googleProvider = new GoogleAuthProvider();
@@ -29,24 +29,39 @@ const useFirebase = () => {
     }
     
     const signUp = (email, password) => {
+        setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;
                 setUser(user)
+                setUserName()
+                setError('')
         })
             .catch(error => {
                 const errorMessage = error.message;
                 setError(errorMessage)
             })
+            .finally(() => setIsLoading(false));
 
     }
+    const setUserName = () => {
+        setIsLoading(true)
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(() => { })
+            .catch(error => {
+                const errorMessage = error.message;
+                setError(errorMessage)
+            })
+            .finally(() => setIsLoading(false));
+    }
+    
     const signIn = (email, password) => {
         setIsLoading(true)
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;
                 setUser(user)
-                setError({})
+                setError('')
         })
             .catch(error => {
                 const errorMessage = error.message;
@@ -82,7 +97,10 @@ const useFirebase = () => {
         signUp,
         signIn,
         logOut,
-        isLoading
+        isLoading,
+        setName,
+        setError,
+        name
     }
 
 }

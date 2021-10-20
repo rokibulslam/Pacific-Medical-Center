@@ -1,0 +1,13 @@
+.button{
+    width: 110px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #03ca03;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.button:hover{
+    border: 2px solid aquamarine;
+}
