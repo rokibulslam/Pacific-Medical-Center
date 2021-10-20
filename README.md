@@ -11,6 +11,8 @@ This is a Demo website of a Hospital
     * I have Also used React .
     * This is a super responsive website for all types of devices
     * Home page has a header (simple navbar), banner, services, appoinment footer
+    *I have used Google sign in Process
+    * New user also can sign in and password will be remembered
     * I have also used Context Api and Private Routing tech.... pray for me ..
 
 
