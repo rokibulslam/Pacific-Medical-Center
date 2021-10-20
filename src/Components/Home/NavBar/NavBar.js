@@ -21,6 +21,7 @@ const NavBar = () => {
                 <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold text-white"  to="/home#services">Services</Nav.Link>
                 <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold text-white" to="/appoint">Appoinment</Nav.Link>
                 <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold text-white" to="/experience">Patient Experience</Nav.Link>
+                <Nav.Link as={HashLink} className="text-decoration-none px-3 fw-bold text-white" to="/about">About Us</Nav.Link>
                 </Nav>
                 <Nav className="justify-content-center align-items-center">
                 {user.email ? <button className="button text-white p-2"  onClick={logOut}>Sign Out</button> :

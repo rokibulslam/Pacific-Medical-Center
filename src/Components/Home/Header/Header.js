@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import img1 from '../../../Images/Banner/Hospital1.png'
 import img2 from '../../../Images/Banner/hospital2.png'
 import img3 from '../../../Images/Banner/hospital3.png'
@@ -17,7 +18,9 @@ const Header = () => {
                 <Carousel.Caption >
                 <h5 className="fs-3 fw-bold">Hospital Area</h5>
                         <p>Pacific Medical Center</p>
-                        <Button className="btn btn-success">About Us</Button>
+                        <Link to="/about">
+                            <Button className="btn btn-success">About Us</Button>
+                        </Link>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -29,7 +32,9 @@ const Header = () => {
                 <Carousel.Caption>
                 <h5 className="fs-3 fw-bold">Front Side of Hospital</h5>
                         <p>Pacific Medical Center</p>
-                        <Button className="btn btn-warning">About Us</Button>
+                        <Link to="/about">
+                            <Button className="btn btn-warning">About Us</Button>
+                        </Link>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -41,7 +46,9 @@ const Header = () => {
                 <Carousel.Caption>
                 <h5 className="fs-3 fw-bold">Internal Rooms For Doctors</h5>
                         <p>Pacific Medical Center</p>
-                        <Button className="btn btn-warning">About Us</Button>
+                        <Link to="/about">
+                            <Button className="btn btn-warning">About Us</Button>
+                        </Link>
                         
                 </Carousel.Caption>
             </Carousel.Item>
