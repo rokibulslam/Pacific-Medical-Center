@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button,  Form } from 'react-bootstrap';
+import { Button,  Col,  Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import './SignIn.css'
@@ -27,16 +27,15 @@ const SignIn = () => {
     return (
         <div className="my-5 overflow-hidden pb-5">
             <h1 className="text-center text-color">Welcome To Pacific Medical Center</h1>
-            <div className="container">
-            <Form className="pt-5 pb-2 form" >
-            <Form.Group className="mb-3 " controlId="formBasicEmail">
+            <div className="container d-flex flex-column align-items-center">
+            <Form className="pt-5 pb-2 " >
+                <Form.Group  className="mb-3 " controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control onBlur={getEmail} type="email" placeholder="Enter email" />
                 <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
                 </Form.Text>
-            </Form.Group>
-
+                </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control onBlur={getPassword} type="password" placeholder="Password" />
