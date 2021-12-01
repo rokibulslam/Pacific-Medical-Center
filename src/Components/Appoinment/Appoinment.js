@@ -5,8 +5,8 @@ import './Appoinment.css'
 const Appoinment = () => {
     return (
         <div className="overflow-hidden">
-            <Header></Header>
-            <div className="container py-5">
+            <h1 className="text-center py-3">Appointment</h1>
+            <div className="container pb-5">
                 <h1 className="fs-1 text-center pt-5  textColor">Connecting Bangladesh's Leading Healthcare With The World</h1>
                 <p>American Hospital Dubai is a premier, multi-specialty healthcare institution, offering world-class primary, secondary, and tertiary medical services. We are a multi-Specialist leader offering cutting-edge, evidence-based medical care. We have set the standards in the region with our centers of excellence in Cancer, Heart, and Orthopedics.</p>
                 <p>Our Total Joint Replacement Center of Excellence is the first of its kind in the Middle East and one of only four worldwide, with the most extensive patient base of any private hospital in the region. The center receives international patients from the region and beyond.</p>

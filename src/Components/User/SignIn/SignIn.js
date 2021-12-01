@@ -25,14 +25,14 @@ const SignIn = () => {
 
 
     return (
-        <div className="my-5 overflow-hidden pb-5">
-            <h1 className="text-center text-color">Welcome To Pacific Medical Center</h1>
+        <div className="register-bg overflow-hidden pb-5 text-white">
+            <h1 className="text-center pt-5">Welcome To Pacific Medical Center</h1>
             <div className="container d-flex flex-column align-items-center">
             <Form className="pt-5 pb-2 " >
                 <Form.Group  className="mb-3 " controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control onBlur={getEmail} type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
+                <Form.Text className="text-white">
                 We'll never share your email with anyone else.
                 </Form.Text>
                 </Form.Group>

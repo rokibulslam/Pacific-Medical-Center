@@ -1,6 +1,10 @@
+import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import {  Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
+import './SignUp.css'
+
 
 const SignUp = () => {
     const { signUp, error, setError, setName, name} = useAuth();
@@ -39,33 +43,56 @@ const SignUp = () => {
     }
      
     return (
-        <div className="my-5 overflow-hidden pb-5">
-            <h1 className="text-center">Registration Here</h1>
-            <div className="container d-flex flex-column align-items-center">
-                <Form>
-                <Form.Group className="mb-3 text-start" controlId="formGridAddress1">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control required onBlur={getName} placeholder="Name" />
-                </Form.Group>
-                <Form.Group className="mb-3 text-start" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control required onBlur={getEmail} type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                    </Form.Text>
-                </Form.Group>
-                <Form.Group className="mb-3 text-start" controlId="formBasicPassword">
-                    <Form.Label className="text-start">Password</Form.Label>
-                    <Form.Control required onBlur={getPassword} type="password" placeholder="Password" />
-                </Form.Group>
-                
-                <h6 className="text-danger">{error}</h6>
-                <Button onClick={handleSignUp} className="mb-5 sign-in" type="submit">
-                    Submit
-                </Button>
-            </Form>
-            </div>
+      <div className="register-bg overflow-hidden text-white pb-5">
+        <h1 className="text-center pt-5">Registration Here</h1>
+        <div className="container d-flex flex-column align-items-center">
+          <Form>
+            <Form.Group
+              className="mb-3 text-start"
+              controlId="formGridAddress1"
+            >
+              <Form.Label>Name</Form.Label>
+              <Form.Control required onBlur={getName} placeholder="Name" />
+            </Form.Group>
+            <Form.Group className="mb-3 text-start" controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                required
+                onBlur={getEmail}
+                type="email"
+                placeholder="Enter email"
+              />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
+            <Form.Group
+              className="mb-3 text-start"
+              controlId="formBasicPassword"
+            >
+              <Form.Label className="text-start">Password</Form.Label>
+              <Form.Control
+                required
+                onBlur={getPassword}
+                type="password"
+                placeholder="Password"
+              />
+            </Form.Group>
+
+            <h6 className="text-danger">{error}</h6>
+            <Button
+              onClick={handleSignUp}
+              className="googlesign-in text-white  mb-5 sign-in"
+              type="submit"
+            >
+              Submit
+                    </Button>
+                    <br />
+            
+            <Link className="text-danger" to="/signIn">Already Registered?</Link>
+          </Form>
         </div>
+      </div>
     );
 };
 

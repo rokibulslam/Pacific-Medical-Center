@@ -11,7 +11,7 @@ const NavBar = () => {
     
     return (
         <div>
-            <Navbar className="nav-color sticky-top overflow-hidden navbar " variant="dark" collapseOnSelect expand="lg" >
+            <Navbar className="nav-color sticky-top overflow-hidden navbar " variant="light" collapseOnSelect expand="lg" >
             <Container>
                     <Navbar.Brand className="fw-bolder text-white"><img className="rounded-3" src={imgicon} alt="" /> PMC</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,9 +25,9 @@ const NavBar = () => {
                 </Nav>
                 <Nav className="justify-content-center align-items-center">
                 {user.email ? <button className="button text-white p-2"  onClick={logOut}>Sign Out</button> :
-                <Nav.Link as={HashLink} className="button text-white m-2" to="/signIn">Sign in</Nav.Link>}
+                <Nav.Link as={HashLink} className="button  m-2" to="/signIn">Sign in</Nav.Link>}
                 {user?.email ? <p className="mb-0 ps-3 text-white"> {user.displayName}</p> 
-                                : <Nav.Link as={HashLink} className="button text-white" to="/signUp">Sign Up</Nav.Link>}
+                                : <Nav.Link as={HashLink} className="button" to="/signUp">Sign Up</Nav.Link>}
                 </Nav>
             </Navbar.Collapse>
             </Container>

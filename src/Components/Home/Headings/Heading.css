@@ -1,8 +1,5 @@
 .headings{
-    background-color: indigo;
+    background-color: #234A4A;
     transition: .9s;
-}
-.headings:hover{
-    background-color: #f5b506 ;
-    
+    border-bottom: 2px solid rgb(68, 242, 134);
 }

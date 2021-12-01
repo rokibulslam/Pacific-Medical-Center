@@ -5,7 +5,7 @@ import './Experience.css'
 const Experience = () => {
     return (
         <div className="experience">
-            <Header></Header>
+           
             <div className="p-5 text-center text-white bg-success">
                 <div className="container">
                 <h1>Pacific Medical Center Shares The</h1>
