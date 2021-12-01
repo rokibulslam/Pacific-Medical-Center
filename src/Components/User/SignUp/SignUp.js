@@ -62,7 +62,7 @@ const SignUp = () => {
                 type="email"
                 placeholder="Enter email"
               />
-              <Form.Text className="text-muted">
+              <Form.Text className="text-white">
                 We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
@@ -86,11 +86,12 @@ const SignUp = () => {
               type="submit"
             >
               Submit
-                    </Button>
-                    <br />
-            
-            <Link className="text-danger" to="/signIn">Already Registered?</Link>
+            </Button>
+            <br />
           </Form>
+          <Link className="text-white text-center" to="/signIn">
+            Already Registered?
+          </Link>
         </div>
       </div>
     );

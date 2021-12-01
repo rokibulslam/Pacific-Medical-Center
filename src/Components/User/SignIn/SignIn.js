@@ -50,7 +50,7 @@ const SignIn = () => {
                 <br />
                 
             <p className="d-inline me-3">Create a new account here</p>
-            <Link to="/signUp">Sign Up</Link> 
+            <Link className="text-white" to="/signUp">Sign Up</Link> 
         </div>
         </div>
     );
